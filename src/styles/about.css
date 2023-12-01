@@ -1,0 +1,30 @@
+
+:root {
+    --clr-green: #2b9872;
+    --clr-gray:  rgb(51, 46, 46);
+ }
+.about-section .img-flex img {
+    max-width: 100%;
+    width: min(25%, 400px);
+    height: auto;
+    object-fit: cover;
+}
+.about-section .img-flex {
+   display: flex;
+   flex-wrap: wrap;
+   flex-basis: auto;
+   justify-content: center;
+   gap: 0.5rem;
+   padding: 1rem;
+}
+.about-section > .section-txt {
+   margin: 1rem 0;
+   text-align: center;
+   text-transform: capitalize;
+   text-decoration: underline;
+   text-decoration-color: var(--clr-green);
+   text-underline-offset: 0.5rem;
+   text-decoration-thickness: 0.15rem;
+   color: var(--clr-gray);
+   line-height: 2;
+}

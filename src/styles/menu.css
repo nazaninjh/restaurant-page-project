@@ -1,0 +1,31 @@
+:root {
+    --clr-green: #2b9872;
+    --clr-gray:  rgb(51, 46, 46);
+    --clr-light-gray: rgb(115, 101, 101);
+ }
+
+.menu-wrapper {
+    width: 60%;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-shadow: 2px 2px 6px var(--clr-light-gray);
+}
+.menu-section {
+    padding: 0.5rem;
+    box-shadow: 2px 2px 6px var(--clr-light-gray);
+   background-color: var(--clr-gray);
+   display: grid;
+   grid-auto-flow: column;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   justify-items: center;
+   margin: 0 auto;
+   max-width: 60%;
+}
+.menu-section p {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--clr-green);
+}
