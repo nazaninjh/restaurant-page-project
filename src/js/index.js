@@ -1,10 +1,15 @@
 import "../styles/style.css";
 import "../styles/menu.css";
 import "../styles/about.css";
+
+// change all imges with css url
 import { showMenu } from "./menu";
 import { showAbout } from "./about";
 const content = document.getElementById("content");
 const showHome = (() => {
+    const clear = () => {
+        content.innerHTML = "";
+    }
     const createNav = () => {
         const nav = document.createElement("nav");
         content.appendChild(nav);
@@ -42,10 +47,10 @@ const showHome = (() => {
         const imgFlex = document.createElement("div");
         imgFlex.classList.add("img-flex");
         homeSection.appendChild(imgFlex);
-        const imgHtml = `<img src="../src/pics/one.jpg" alt="Food Picture">
-        <img src="../src/pics/three.jpg" alt="Food Picture">
-        <img src="../src/pics/four.jpg" alt="Food Picture">
-        <img src="../src/pics/two.jpg" alt="Food Picture">`
+        const imgHtml = `<div class = "img-item"></div>
+        <div class = "img-item" ></div>
+        <div class = "img-item" ></div>
+        <div class = "img-item" ></div>`
         imgFlex.insertAdjacentHTML("afterbegin", imgHtml);
     }
     const createFooter = () => {
@@ -69,9 +74,11 @@ const showHome = (() => {
         createNav,
         createHeader,
         createSection,
-        createFooter
+        createFooter,
+        clear
     }
 })();
+showHome.clear();
 showHome.createNav();
 showHome.createHeader();
 showHome.createSection();
@@ -81,6 +88,7 @@ const navBtns = Array.from(document.querySelectorAll(".nav-btn"));
 navBtns.forEach(nav => nav.addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target === navBtns[0]) {
+        showHome.clear();
         showHome.createNav();
         showHome.createHeader();
         showHome.createSection();

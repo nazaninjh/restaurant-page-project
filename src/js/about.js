@@ -44,12 +44,12 @@ const showAbout = (() => {
         const imgFlex = document.createElement("div");
         imgFlex.classList.add("img-flex");
         aboutSection.appendChild(imgFlex);
-        const imgHtml = `<img src="../src/pics/barista-1.jpg" alt="barista picture">
-        <img src="../src/pics/chef-1.jpg" alt="chef picture">
-        <img src="../src/pics/barista-2.jpg" alt="barista picture">
-        <img src="../src/pics/chef-2.jpg" alt="chef picture">
-        <img src="../src/pics/chef-3.jpg" alt="chef picture">
-        <img src= "../src/pics/barista-3.jpg" alt="barista picture">`
+        const imgHtml =  `<div class = "img-item"></div>
+        <div class = "img-item" ></div>
+        <div class = "img-item" ></div>
+        <div class = "img-item" ></div>
+        <div class = "img-item" ></div>
+        <div class = "img-item" ></div>`
         imgFlex.insertAdjacentHTML("afterbegin", imgHtml);
        
         

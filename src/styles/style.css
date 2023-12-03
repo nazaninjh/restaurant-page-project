@@ -82,12 +82,27 @@ header > p {
    gap: 0.5rem;
    padding: 1rem;
 }
-.home-section .img-flex img {
+.home-section .img-flex .img-item {
     max-width: 100%;
-    width: min(25%, 400px);
-    height: auto;
+    width: max(25%, 250px);
+    min-height: 300px;
     object-fit: cover;
+    background-size: max(25%, 250px) 300px ;
+    background-repeat: no-repeat;
 }
+.home-section .img-flex .img-item:nth-child(1) {
+    background-image: url(../pics/two.jpg);
+}
+.home-section .img-flex .img-item:nth-child(2) {
+    background-image: url(../pics/one.jpg);
+}
+.home-section .img-flex .img-item:nth-child(3) {
+    background-image: url(../pics/three.jpg);
+}
+.home-section .img-flex .img-item:nth-child(4) {
+    background-image: url(../pics/four.jpg);
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;

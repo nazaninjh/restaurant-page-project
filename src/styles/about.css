@@ -3,12 +3,7 @@
     --clr-green: #2b9872;
     --clr-gray:  rgb(51, 46, 46);
  }
-.about-section .img-flex img {
-    max-width: 100%;
-    width: min(25%, 400px);
-    height: auto;
-    object-fit: cover;
-}
+
 .about-section .img-flex {
    display: flex;
    flex-wrap: wrap;
@@ -16,6 +11,32 @@
    justify-content: center;
    gap: 0.5rem;
    padding: 1rem;
+}
+.about-section .img-flex .img-item {
+   max-width: 100%;
+   width: max(25%, 250px);
+   min-height: 300px;
+   object-fit: cover;
+   background-size: max(25%, 250px) 300px ;
+   background-repeat: no-repeat;
+}
+.about-section .img-flex .img-item:nth-child(1) {
+   background-image: url(../pics/barista-1.jpg);
+}
+.about-section .img-flex .img-item:nth-child(2) {
+   background-image: url(../pics/chef-1.jpg);
+}
+.about-section .img-flex .img-item:nth-child(3) {
+   background-image: url(../pics/barista-2.jpg);
+}
+.about-section .img-flex .img-item:nth-child(4) {
+   background-image: url(../pics/chef-2.jpg);
+}
+.about-section .img-flex .img-item:nth-child(5) {
+   background-image: url(../pics/barista-3.jpg);
+}
+.about-section .img-flex .img-item:nth-child(6) {
+   background-image: url(../pics/chef-3.jpg);
 }
 .about-section > .section-txt {
    margin: 1rem 0;
